@@ -2,6 +2,10 @@ import * as React from "react";
 
 export interface IAppProps {}
 
-export default function IApp(props: IAppProps) {
-  return <h1>Hello React Typescript!</h1>;
+class App extends React.Component {
+    render() {
+        return <h1>Finn Testing</h1>
+    };
 }
+
+export default App;

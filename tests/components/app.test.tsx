@@ -1,6 +1,12 @@
+import { shallow, mount,configure } from "enzyme";
+import App from "../../src/components/App";
+import React = require("react");
+
 describe("Should render app", () => {
     it("Render app", () => {
-        const test = 1 + 1;
-        expect(test).toEqual(2);
+        const wrapper = mount(<App/>)
+        const app = wrapper.find("Home");
+
+        expect(app).toHaveLength(1);
     });
 });

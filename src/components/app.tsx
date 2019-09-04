@@ -1,10 +1,10 @@
 import * as React from "react";
+import { Component } from "react";
+import Home from "./body/home";
 
-export interface IAppProps {}
-
-class App extends React.Component {
+class App extends Component {
     render() {
-        return <h1>Finn Testing</h1>
+        return (<Home/>)
     };
 }
 

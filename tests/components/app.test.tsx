@@ -2,8 +2,8 @@ import { shallow } from "enzyme";
 import App from "../../src/components/App";
 import * as React from "react";
 
-describe("Should render app", () => {
-    it("Render app and find home", () => {
+describe("Test App component", () => {
+    it("Render App component and find home component", () => {
         const wrapper = shallow(<App/>)
         const app = wrapper.find("Home");
 

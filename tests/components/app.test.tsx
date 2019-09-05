@@ -1,6 +1,6 @@
-import { shallow, mount,configure } from "enzyme";
+import { mount } from "enzyme";
 import App from "../../src/components/App";
-import React = require("react");
+import * as React from "react";
 
 describe("Should render app", () => {
     it("Render app", () => {

@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Component } from "react";
+import Navigation from "./header/nagivation";
 
 class Home extends Component{
     render(){
-        return(<h1>Finn Home page</h1>)
+        return(<Navigation />);
     };
 }
 export default Home;

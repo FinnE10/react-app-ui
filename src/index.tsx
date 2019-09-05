@@ -1,9 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import App from "./components/App";
+import { Component } from "react";
+import App from "./components/app";
+require('bootstrap')
+require('jquery/src/jquery')
 
-const Index = () => {
-  return <App />;
+class Index extends Component {
+    render() {
+      return( <App />)
+    }
 };
 
 ReactDOM.render(<Index />, document.getElementById("root"));

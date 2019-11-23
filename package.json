@@ -4,10 +4,10 @@
   "description": "Fun React App for some testing purposes",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "start": "webpack-dev-server --open --config webpack.dev.ts",
-    "build": "webpack --mode production --config webpack.prod.ts"
+    "test": "jest --config=jest.config.js",
+    "test:coverage": "jest --coverage --config=jest.config.js",
+    "start": "webpack-dev-server --open --config=webpack.dev.ts",
+    "build": "webpack --mode production --config=webpack.prod.ts"
   },
   "repository": {
     "type": "git",
@@ -52,12 +52,5 @@
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "jsdom",
-    "setupFiles": [
-      "<rootDir>/tests/setupTests.js"
-    ]
-  }
+  } 
 }

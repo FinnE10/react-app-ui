@@ -13,8 +13,8 @@ class Navigation extends Component{
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 </Nav>
                 <Nav>
-                    <Nav.Link href="https://www.instagram.com/finntrenholm/"><FontAwesomeIcon icon={faInstagram} /></Nav.Link>
-                    <Nav.Link href="https://github.com/FinnE10/react-app-ui"><FontAwesomeIcon icon={faGithub} /></Nav.Link>
+                    <Nav.Link href="https://www.instagram.com/finntrenholm/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Nav.Link>
+                    <Nav.Link href="https://github.com/FinnE10/react-app-ui" target="_blank"><FontAwesomeIcon icon={faGithub} /></Nav.Link>
                 </Nav>
             </Navbar>
         )

@@ -14,6 +14,6 @@ describe("Test Navigation component", () =>{
         expect(navbar).toHaveLength(1);
         expect(navs).toHaveLength(2);
         expect(navbarBrand).toHaveLength(1);
-        expect(icons).toHaveLength(2);
+        expect(icons).toHaveLength(3);
     });
 });

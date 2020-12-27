@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
-  template: "./src/index.html"
+    template: path.resolve(__dirname, "src") + "/index.html"
 });
 
 const cssPlugin = new MiniCssExtractPlugin({
@@ -15,7 +15,7 @@ const cssPlugin = new MiniCssExtractPlugin({
 });
 
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: path.resolve(__dirname, "src") + "/index.tsx",
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js"
@@ -25,11 +25,11 @@ module.exports = {
         extensions: [".ts", ".tsx", ".js", ".json"]
     },
     module: {
-        // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+        // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
         rules: [
             { 
                 test: /\.tsx?$/, 
-                loader: "awesome-typescript-loader" 
+                loader: "ts-loader" 
             }, 
             {
                 test: /\.css$/,
@@ -50,4 +50,4 @@ module.exports = {
         htmlPlugin,
         cssPlugin
     ]
-}
+};
